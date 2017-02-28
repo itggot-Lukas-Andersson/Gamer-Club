@@ -3,7 +3,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     margin: 0;
-    height: 640px;
+    overflow-y: hidden;
 }
 
 p, a, h1, h2, h3, h4, a, label {
@@ -17,21 +17,21 @@ p, a, h1, h2, h3, h4, a, label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 340px;
+    width: 100vw;
 }
 
 .tabs {
     height: 48px;
-    width: 100%;
+    width: 100vw;
     background-color: #3F51B5;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
 
-.tab1, .tab2 {
+#tab1, #tab2 {
     height: 100%;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -42,11 +42,11 @@ p, a, h1, h2, h3, h4, a, label {
     font-size: 14px;
 }
 
-.tab1 {
-    box-shadow:inset 0px -6px 2px -2px white;
+.selected {
+    box-shadow:inset 0px -6px 0px -2px white;
 }
 
-.tab1 h2 {
+.selected h2 {
     opacity: 1;
 }
 
@@ -54,6 +54,57 @@ p, a, h1, h2, h3, h4, a, label {
     opacity: 1;
 }
 
+.maincontent {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn {
+    padding: 12px 0 12px 0;
+    background-color: #5C6BC0;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 234px;
+    margin-top: 50px;
+}
+
+.btn a {
+    opacity: 1;
+    color: white;
+}
+
+.centerbox {
+    margin-top: 50px;
+}
+
+.icons {
+  opacity: 0.38;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.icons i {
+  margin-top: -24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- MDL ------------------------- */
 
 .group h2 		 { 
   text-align:center; 
@@ -153,28 +204,4 @@ input:focus ~ .highlight {
   to 	{ width:0; background:transparent; }
 }
 
-.maincontent {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.btn {
-    padding: 12px 0 12px 0;
-    background-color: #5C6BC0;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    width: 234px;
-    margin-top: 50px;
-}
-
-.btn a {
-    opacity: 1;
-}
-
-.centerbox {
-    margin-top: 50px;
-}
+/* ------------------------- MDL ------------------------- */
